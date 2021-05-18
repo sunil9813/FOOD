@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+
+        <nav>
+          <ul id="menuitem">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+        <button class="btn btn1">Order Online</button>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+
+  <section class="home">
+    <div class="img"> </div>
+    <div class="container">
+      <div class="left">
+        <h4> Discover Your Teste </h4><br>
+        <h1>We Belive Good Food <br> Offer Great Smile</h1> <br>
+        <p> Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn btn2">Resurvation</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="details">
+    <div class="container">
+      <div class="content flex">
+        <div class="left">
+          <div class="top">
+            <h4> Discover Your Teste </h4><br>
+            <h1>We Provide Good Food For Your Family!</h1>
+            <p> Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+          <div class="bottom  flex">
+            <div class="img flex">
+              <div class="box-img">
+                <img src="image/h4.png" alt="">
+              </div>
+              <div class="text">
+                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+              </div>
+            </div>
+            <div class="img flex">
+              <div class="box-img">
+                <img src="image/h5.png" alt="">
+              </div>
+              <div class="text">
+                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottom flex">
+            <div class="img flex">
+              <div class="box-img">
+                <img src="image/h5.png" alt="">
+              </div>
+              <div class="text">
+                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+              </div>
+            </div>
+            <div class="img flex">
+              <div class="box-img">
+                <img src="image/h4.png" alt="">
+              </div>
+              <div class="text">
+                <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="image/h3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="offer">
+    <div class="container">
+      <div class="top">
+        <h4>Our Offerd Menu</h4>
+        <h1>Some Trendy And Popular <br> Courses Offerd</h1>
+
+        <div class="menu">
+          <ul>
+            <li class="active">Special</li>
+            <li>Lunch</li>
+            <li>Brakefirst</li>
+            <li>Dinner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="image flex">
+      <div class="img_box">
+        <img src="image/o1.jpg" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h4>$50</h4>
+            <h1>Delicious Food</h1>
+            <p>Ut enim ad minim veniam quis nostr.</p>
+            <button class="btn btn2">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="img_box">
+        <img src="image/o2.jpg" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h4>$50</h4>
+            <h1>Delicious Food</h1>
+            <p>Ut enim ad minim veniam quis nostr.</p>
+            <button class="btn btn2">ORDER NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="img_box2 flex">
+        <div class="img_box">
+          <img src="image/o4.jpg" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>$50</h4>
+              <h1>Delicious Food</h1>
+              <p>Ut enim ad minim veniam quis nostr.</p>
+              <button class="btn btn2">ORDER NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="img_box ">
+          <img src="image/o5.jpg" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>$50</h4>
+              <h1>Delicious Food</h1>
+              <p>Ut enim ad minim veniam quis nostr.</p>
+              <button class="btn btn2">ORDER NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/a.jpg" alt="">
+      </div>
+      <div class="right">
+        <h4>About Our Restaurant</h4> <br>
+        <h1>We Provide Good Food For Your Family!</h1><br>
+        <p>Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi ufsit aliquip ex ea commodo consequat is aute irure m, quis nostrud exer</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected our, or randomised words which don't look even slightly believab If you are going to use a passage.</p>
+        <br>
+        <button class="btn btn2">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="book">
+    <div class="container">
+      <div class="text">
+        <h4>About Our Restaurant</h4>
+        <h1>Book A Table</h1>
+
+        <form>
+          <div class="input flex">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Person">
+          </div>
+          <div class="input flex">
+            <i class="fa fa-calendar"></i>
+            <input type="date" placeholder="Date">
+          </div>
+          <div class="input flex">
+            <i class="fa fa-clock-o"></i>
+            <input type="time" placeholder="Time">
+          </div>
+          <div class="input">
+            <button class="btn btn1">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="services">
+    <div class="container">
+      <h4>Servicees We Offer</h4> <br>
+      <h1>Our Best Services</h1> <br>
+
+      <div class="box flex">
+        <div class="item">
+          <img src="image/h4.png" alt=""> <br>
+          <h2>Best Chef</h2> <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="item active">
+          <img src="image/h4.png" alt=""> <br>
+          <h2>Quality Food</h2> <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="item">
+          <img src="image/h4.png" alt=""> <br>
+          <h2>Perfect Cook</h2> <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="blog">
+    <div class="container">
+      <h4>Our New Blog News</h4> <br>
+      <h1>Our Recnet News</h1> <br>
+
+      <div class="box flex">
+        <div class="item">
+          <img src="image/b1.jpg" alt=""> <br>
+          <div class="para">
+            <p>25 DEC, 2021</p>
+            <h2>Addiction When Food Plate Becomes</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/b2.jpg" alt=""> <br>
+          <div class="para">
+            <p>25 DEC, 2021</p>
+            <h2>Addiction When Food Plate Becomes</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="image/b3.jpg" alt=""> <br>
+          <div class="para">
+            <p>25 DEC, 2021</p>
+            <h2>Addiction When Food Plate Becomes</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="image/logo.jpg" alt="">
+        </div>
+
+        <div class="nav">
+          <h2> Navigation</h2>
+          <ul>
+            <li>HOME </li>
+            <li> PRODUCTS </li>
+            <li> ABOUT </li>
+            <li> CONTACT </li>
+            <li> ACCOUNT</li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>Registration </li>
+            <li>Login </li>
+            <li> Policy </li>
+            <li>Terms & Conditions </li>
+          </ul>
+        </div>
+
+        <div class="insta">
+          <h2>Instagram Feed</h2>
+          <div class="img">
+            <div class="box">
+              <img src="image/i1.jpeg" alt="">
+            </div>
+            <div class="box">
+              <img src="image/i2.jpeg" alt="">
+            </div>
+            <div class="box">
+              <img src="image/i3.jpeg" alt="">
+            </div>
+            <div class="box">
+              <img src="image/i4.jpeg" alt="">
+            </div>
+            <div class="box">
+              <img src="image/i5.jpeg" alt="">
+            </div>
+            <div class="box">
+              <img src="image/i6.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="legal flex">
+        <p>Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+        <div class="icon flex">
+          <h2>Follow Us</h2>
+          <hr>
+          <div class="box flex">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
